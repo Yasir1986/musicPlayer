@@ -1,0 +1,147 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+}
+
+.tracklist-container {
+  width: 280px;
+  min-width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.tracklist-container h2 {
+  margin: 0 0 24px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e88e5;
+}
+
+.player-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 32px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e88e5;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(30, 136, 229, 0.3);
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(21, 101, 192, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablet & Small Laptop */
+@media (max-width: 1024px) {
+  .tracklist-container {
+    width: 260px;
+    min-width: 260px;
+    padding: 20px;
+  }
+
+  .player-area {
+    padding: 30px;
+  }
+}
+
+/* Mobile Landscape + Tablet Portrait */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .tracklist-container {
+    width: auto;
+    min-width: unset;
+    max-height: 40vh;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: none;
+    padding: 16px;
+  }
+
+  .player-area {
+    padding: 32px 20px;
+    min-height: 60vh;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  button {
+    flex: 1;
+    min-width: 140px;
+    padding: 16px 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .tracklist-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .player-area {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .tracklist-container {
+    padding: 12px;
+  }
+
+  .player-area {
+    padding: 20px 12px;
+  }
+}

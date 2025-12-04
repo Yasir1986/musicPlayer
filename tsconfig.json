@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/components/Player/Player.tsx", "src/components/PlayPauseButton/PlayPauseButton.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
