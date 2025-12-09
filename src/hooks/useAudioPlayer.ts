@@ -53,7 +53,7 @@ export const useAudioPlayer = () => {
   }, []);
 
   const changeVolume = useCallback((value: number) => {
-    // Ensure value is a valid number
+    // Ensure value is valid number
     const numValue = Number(value);
     if (isNaN(numValue)) {
       console.error("Invalid volume value:", value);
