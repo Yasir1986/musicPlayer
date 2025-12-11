@@ -67,7 +67,6 @@ button:active {
 
 /* RESPONSIVE BREAKPOINTS */
 
-/* Tablet & Small Laptop */
 @media (max-width: 1024px) {
   .tracklist-container {
     width: 260px;
