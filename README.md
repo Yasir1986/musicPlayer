@@ -8,7 +8,7 @@ Follow the steps to run this myPortFolio
 
 Or
 
-For live deploy:-
+For live deploy:
 
 https://warm-mandazi-9cd34d.netlify.app/
 
