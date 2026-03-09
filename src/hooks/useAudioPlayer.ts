@@ -48,10 +48,12 @@ export const useAudioPlayer = () => {
     setIsPlaying((prev) => !prev);
   }, [selectedTrack]);
 
+  // Select Track Function
   const selectTrack = useCallback((track: string) => {
     setSelectedTrack(track);
   }, []);
 
+  // Volume Change Function
   const changeVolume = useCallback((value: number) => {
     const numValue = Number(value);
     if (isNaN(numValue)) {
